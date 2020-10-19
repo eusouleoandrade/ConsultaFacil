@@ -1,0 +1,30 @@
+﻿@model INTELECTAH.ConsultaFacil.ViewModel.Implementations.ExameViewModel
+
+<div class="panel-body">
+    <div class="form-horizontal">
+        <div class="form-group">
+            <label asp-for="ExameId" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.ExameId, new { htmlAttributes = new { @class = "form-control", disabled = "disabled" } })
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Nome" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @class = "form-control", disabled = "disabled" } })
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="TipoExame" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.TipoExame.Nome, new { htmlAttributes = new { @class = "form-control", disabled = "disabled" } })
+            </div>
+        </div>
+        <div class="form-group">
+            <label asp-for="Observacao" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                @Html.TextAreaFor(model => model.Observacao, new { @class = "form-control", disabled = "disabled" })
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,64 @@
+﻿@model INTELECTAH.ConsultaFacil.ViewModel.Implementations.ConsultaViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Deletar";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                @Html.ActionLink("Consulta Fácil", "Index", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Consulta", "Index", "Consulta")
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<div class="wrapper wrapper-content animated fadeInDown">
+    <div class="panel panel-primary">
+        <partial name="~/Views/Consulta/_DeleteDetailsPartial.cshtml" , model="Model" />
+        <div class="panel-footer">
+            <a asp-action="Index" class="btn btn-white">Voltar para lista</a>
+            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#deleteConfirmationModal">
+                Deletar
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal inmodal" id="deleteConfirmationModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Fechar</span></button>
+                <i class="fa fa-ban modal-icon"></i>
+                <h4 class="modal-title">Confirmar exclusão</h4>
+            </div>
+            <div class="modal-body">
+                <p>
+                    Você deseja deletar a Consulta do Paciente: <strong>@Model?.Paciente.Nome.ToUpper()</strong>
+                </p>
+                @using (Html.BeginForm("Delete", "Consulta", FormMethod.Post, new { @id = "delete-form", role = "form" }))
+                {
+                    @Html.HiddenFor(m => m.ConsultaId)
+                    @Html.HiddenFor(m => m.Paciente.Nome)
+                    @Html.AntiForgeryToken()
+                }
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-white" data-dismiss="modal">Não</button>
+                <button type="button" class="ladda-button btn btn-primary" onclick="$('#delete-form').submit();" data-style="zoom-in">Sim</button>
+            </div>
+        </div>
+    </div>
+</div>

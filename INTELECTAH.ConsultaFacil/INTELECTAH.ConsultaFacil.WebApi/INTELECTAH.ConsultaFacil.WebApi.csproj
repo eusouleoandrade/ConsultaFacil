@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>f69cb621-4c3a-4707-a1b1-da9b8895574f</UserSecretsId>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.9" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.Mapper\INTELECTAH.ConsultaFacil.Mapper.csproj" />
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.Service\INTELECTAH.ConsultaFacil.Service.csproj" />
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.SQLServerRepository\INTELECTAH.ConsultaFacil.Repository.SqlServer.csproj" />
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.ViewModel\INTELECTAH.ConsultaFacil.ViewModel.csproj" />
+  </ItemGroup>
+</Project>

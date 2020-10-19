@@ -1,0 +1,41 @@
+﻿@model INTELECTAH.ConsultaFacil.ViewModel.Implementations.ExameViewModel
+
+@{
+    ViewBag.Title = "Criar";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-lg-10">
+        <h2>@ViewBag.Title</h2>
+        <ol class="breadcrumb">
+            <li>
+                @Html.ActionLink("Consulta Fácil", "Index", "Home")
+            </li>
+            <li>
+                @Html.ActionLink("Exame", "Index", "Exame")
+            </li>
+            <li class="active">
+                <strong>@ViewBag.Title</strong>
+            </li>
+        </ol>
+    </div>
+    <div class="col-lg-2">
+    </div>
+</div>
+
+<form asp-action="Create">
+    <div class="wrapper wrapper-content animated fadeInDown">
+        <div class="panel panel-primary">
+            <partial name="~/Views/Exame/_CreateEditPartial.cshtml" , model="Model" />
+            <div class="panel-footer panel-info">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-10">
+                        <a asp-action="Index" class="btn btn-white">Voltar para lista</a>
+                        <input type="submit" value="Criar" class="btn btn-primary" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>

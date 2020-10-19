@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Consulta Fácil | @ViewBag.Title</title>
+    @RenderSection("StyleBefore", false)
+    <link rel="stylesheet" href="~/css/plugins/toastr/toastr.min.css" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/animate.css" />
+    <link rel="stylesheet" href="~/css/style.css" />
+    <link rel="stylesheet" href="~/css/fonts/font-awesome/css/font-awesome.min.css" />
+    @RenderSection("Styles", false)
+</head>
+<body>
+    <!-- Wrapper-->
+    <div id="wrapper">
+
+        <!-- Navigation -->
+        <partial name="~/Views/Shared/_Navigation.cshtml" />
+
+        <!-- Page wraper -->
+        <div id="page-wrapper" class="gray-bg">
+
+            <!-- Top Navbar -->
+            <partial name="~/Views/Shared/_TopNavbar.cshtml" />
+
+            <!-- Main view  -->
+            @RenderBody()
+
+            <!-- Footer -->
+            <partial name="~/Views/Shared/_Footer.cshtml" />
+
+        </div>
+        <!-- End page wrapper-->
+    </div>
+    <!-- End wrapper-->
+    <script src="~/js/jquery-3.4.1.min.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script src="~/js/plugins/metisMenu/metisMenu.min.js"></script>
+    <script src="~/js/plugins/pace/pace.min.js"></script>
+    <script src="~/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="~/js/app/inspinia.js"></script>
+    <script src="~/js/plugins/toastr/toastr.min.js"></script>
+    <script src="~/js/custom/setToastr.js"></script>
+    <script src="~/js/custom/setTempDataMessage.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            setTempDataMessage('@TempData["Message"]');
+            setTempDataMessageError('@TempData["MessageError"]');
+        });
+    </script>
+    @RenderSection("ScriptPage", false)
+</body>
+</html>

@@ -1,0 +1,45 @@
+﻿<nav class="navbar-default navbar-static-side" role="navigation">
+    <div class="sidebar-collapse">
+        <ul class="nav" id="side-menu">
+            <li class="nav-header \">
+                <div class="dropdown profile-element">
+                    <a class="dropdown-toggle" href="@Url.Action("Index", "Home", new { area = "" })">
+                        <span class="clear">
+                            <span class="block m-t-xs">
+                                <strong class="font-bold">Consulta Fácil</strong>
+                            </span>
+                            <span class="text-muted text-xs block"><small>ASP.NET CORE</small></span>
+                        </span>
+                    </a>
+                </div>
+                <div class="logo-element">
+                    CF+
+                </div>
+            </li>
+            <li class="@Html.IsSelected(controller: "Home")">
+                <a href="@Url.Action("Index", "Home",  new { area = "" })"><i class="fa fa-home"></i> <span class="nav-label">Home</span> </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "Dashboard")">
+                <a href="@Url.Action("Dashboard", "Home",  new { area = "" })"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span> </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "Paciente")">
+                <a href="@Url.Action("Index", "Paciente",  new { area = "" })"><i class="fa fa-user-md"></i> <span class="nav-label">Paciente</span> </a>
+            </li>
+            <li class="@Html.IsSelected(controller: "Consulta")">
+                <a href="@Url.Action("Index", "Consulta", new { area = "" })"><i class="fa fa-stethoscope"></i> <span class="nav-label">Consulta</span></a>
+            </li>
+            <li class="@Html.IsSelected(controller: "Exame")">
+                <a href="@Url.Action("Index", "Exame", new { area = "" })"><i class="fa fa-medkit"></i> <span class="nav-label">Exame</span></a>
+            </li>
+            <li class="@Html.IsSelected(controller: "TipoExame")">
+                <a href="@Url.Action("Index", "TipoExame", new { area = "" })"><i class="fa fa-plus-square"></i> <span class="nav-label">Tipo Exame</span></a>
+            </li>
+            <li class="special_link">
+                <a href="https://github.com/eusouleoandrade/ConsultaFacil" target="_blank"><i class="fa fa-github"></i> <span class="nav-label">GitHub</span></a>
+            </li>
+            <li class="special_link">
+                <a href="http://consultafacil-api.azurewebsites.net/index.html" target="_blank"><i class="fa fa-code"></i> <span class="nav-label">Web Api</span></a>
+            </li>
+        </ul>
+    </div>
+</nav>

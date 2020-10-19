@@ -1,0 +1,204 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\js\custom\filterExame.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\css\bootstrap-theme.css.map" />
+    <None Include="wwwroot\css\bootstrap-theme.min.css.map" />
+    <None Include="wwwroot\css\bootstrap.css.map" />
+    <None Include="wwwroot\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\css\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\css\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\animated.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\bordered-pulled.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\core.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\fixed-width.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\font-awesome.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\icons.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\larger.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\list.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\mixins.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\path.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\rotated-flipped.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\screen-reader.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\stacked.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\less\variables.less" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\font-awesome.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_animated.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_core.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_icons.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_larger.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_list.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_mixins.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_path.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_screen-reader.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_stacked.scss" />
+    <None Include="wwwroot\css\fonts\font-awesome\scss\_variables.scss" />
+    <None Include="wwwroot\css\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\css\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\fonts\font-awesome\fonts\fontawesome-webfont.svg" />
+    <None Include="wwwroot\fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
+    <None Include="wwwroot\fonts\font-awesome\less\animated.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\bordered-pulled.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\core.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\fixed-width.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\font-awesome.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\icons.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\larger.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\list.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\mixins.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\path.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\rotated-flipped.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\screen-reader.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\stacked.less" />
+    <None Include="wwwroot\fonts\font-awesome\less\variables.less" />
+    <None Include="wwwroot\fonts\font-awesome\scss\font-awesome.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_animated.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_bordered-pulled.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_core.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_fixed-width.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_icons.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_larger.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_list.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_mixins.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_path.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_rotated-flipped.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_screen-reader.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_stacked.scss" />
+    <None Include="wwwroot\fonts\font-awesome\scss\_variables.scss" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.svg" />
+    <None Include="wwwroot\fonts\glyphicons-halflings-regular.woff2" />
+    <None Include="wwwroot\js\app\inspinia.js" />
+    <None Include="wwwroot\js\bootstrap.js" />
+    <None Include="wwwroot\js\bootstrap.min.js" />
+    <None Include="wwwroot\js\cldr.js" />
+    <None Include="wwwroot\js\cldr\event.js" />
+    <None Include="wwwroot\js\cldr\supplemental.js" />
+    <None Include="wwwroot\js\cldr\unresolved.js" />
+    <None Include="wwwroot\js\custom\filterExame.js" />
+    <None Include="wwwroot\js\custom\setDataTables.js" />
+    <None Include="wwwroot\js\custom\setDatePicker.js" />
+    <None Include="wwwroot\js\custom\setLadda.js" />
+    <None Include="wwwroot\js\custom\setLoadBox.js" />
+    <None Include="wwwroot\js\custom\setTempDataMessage.js" />
+    <None Include="wwwroot\js\custom\setToastr.js" />
+    <None Include="wwwroot\js\esm\popper-utils.js" />
+    <None Include="wwwroot\js\esm\popper-utils.js.map" />
+    <None Include="wwwroot\js\esm\popper-utils.min.js" />
+    <None Include="wwwroot\js\esm\popper-utils.min.js.map" />
+    <None Include="wwwroot\js\esm\popper.js" />
+    <None Include="wwwroot\js\esm\popper.js.map" />
+    <None Include="wwwroot\js\esm\popper.min.js" />
+    <None Include="wwwroot\js\esm\popper.min.js.map" />
+    <None Include="wwwroot\js\globalize.js" />
+    <None Include="wwwroot\js\globalize\currency.js" />
+    <None Include="wwwroot\js\globalize\date.js" />
+    <None Include="wwwroot\js\globalize\message.js" />
+    <None Include="wwwroot\js\globalize\number.js" />
+    <None Include="wwwroot\js\globalize\plural.js" />
+    <None Include="wwwroot\js\globalize\relative-time.js" />
+    <None Include="wwwroot\js\globalize\unit.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.intellisense.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.min.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.min.map" />
+    <None Include="wwwroot\js\jquery-3.4.1.slim.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.slim.min.js" />
+    <None Include="wwwroot\js\jquery-3.4.1.slim.min.map" />
+    <None Include="wwwroot\js\jquery.unobtrusive-ajax.js" />
+    <None Include="wwwroot\js\jquery.unobtrusive-ajax.min.js" />
+    <None Include="wwwroot\js\jquery.validate-vsdoc.js" />
+    <None Include="wwwroot\js\jquery.validate.globalize.js" />
+    <None Include="wwwroot\js\jquery.validate.globalize.min.js" />
+    <None Include="wwwroot\js\jquery.validate.js" />
+    <None Include="wwwroot\js\jquery.validate.min.js" />
+    <None Include="wwwroot\js\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\js\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\js\plugins\datapicker\bootstrap-datepicker.js" />
+    <None Include="wwwroot\js\plugins\dataTables\datatables.min.js" />
+    <None Include="wwwroot\js\plugins\iCheck\icheck.min.js" />
+    <None Include="wwwroot\js\plugins\jqueryUI\jquery-ui.js" />
+    <None Include="wwwroot\js\plugins\ladda\ladda.jquery.min.js" />
+    <None Include="wwwroot\js\plugins\ladda\ladda.min.js" />
+    <None Include="wwwroot\js\plugins\ladda\spin.min.js" />
+    <None Include="wwwroot\js\plugins\metisMenu\metisMenu.min.js" />
+    <None Include="wwwroot\js\plugins\pace\pace.min.js" />
+    <None Include="wwwroot\js\plugins\slimscroll\jquery.slimscroll.min.js" />
+    <None Include="wwwroot\js\plugins\toastr\toastr.min.js" />
+    <None Include="wwwroot\js\popper-utils.js" />
+    <None Include="wwwroot\js\popper-utils.js.map" />
+    <None Include="wwwroot\js\popper-utils.min.js" />
+    <None Include="wwwroot\js\popper-utils.min.js.map" />
+    <None Include="wwwroot\js\popper.js" />
+    <None Include="wwwroot\js\popper.js.map" />
+    <None Include="wwwroot\js\popper.min.js" />
+    <None Include="wwwroot\js\popper.min.js.map" />
+    <None Include="wwwroot\js\README.md" />
+    <None Include="wwwroot\js\site.js" />
+    <None Include="wwwroot\js\umd\popper-utils.js" />
+    <None Include="wwwroot\js\umd\popper-utils.js.map" />
+    <None Include="wwwroot\js\umd\popper-utils.min.js" />
+    <None Include="wwwroot\js\umd\popper-utils.min.js.map" />
+    <None Include="wwwroot\js\umd\popper.js" />
+    <None Include="wwwroot\js\umd\popper.js.map" />
+    <None Include="wwwroot\js\umd\popper.min.js" />
+    <None Include="wwwroot\js\umd\popper.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-grid.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap-reboot.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\css\bootstrap.min.css.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.bundle.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.js.map" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js" />
+    <None Include="wwwroot\lib\bootstrap\dist\js\bootstrap.min.js.map" />
+    <None Include="wwwroot\lib\bootstrap\LICENSE" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js" />
+    <None Include="wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\additional-methods.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.js" />
+    <None Include="wwwroot\lib\jquery-validation\dist\jquery.validate.min.js" />
+    <None Include="wwwroot\lib\jquery-validation\LICENSE.md" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.js" />
+    <None Include="wwwroot\lib\jquery\dist\jquery.min.map" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="3.1.9" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="Polly" Version="7.2.1" />
+    <PackageReference Include="Polly.Extensions.Http" Version="3.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.Service.Common\INTELECTAH.ConsultaFacil.Service.Common.csproj" />
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.ViewModel\INTELECTAH.ConsultaFacil.ViewModel.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="wwwroot\js\index.d.ts" />
+  </ItemGroup>
+
+</Project>

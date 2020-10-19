@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.CommonRespository\INTELECTAH.ConsultaFacil.Respository.Common.csproj" />
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.Domain\INTELECTAH.ConsultaFacil.Domain.csproj" />
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.Exception\INTELECTAH.ConsultaFacil.Exception.csproj" />
+    <ProjectReference Include="..\INTELECTAH.ConsultaFacil.Service.Common\INTELECTAH.ConsultaFacil.Service.Common.csproj" />
+  </ItemGroup>
+
+</Project>

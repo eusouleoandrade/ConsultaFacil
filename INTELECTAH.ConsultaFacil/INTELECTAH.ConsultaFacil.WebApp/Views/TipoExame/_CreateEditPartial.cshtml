@@ -1,0 +1,29 @@
+﻿@model INTELECTAH.ConsultaFacil.ViewModel.Implementations.TipoExameViewModel
+
+<div class="panel-body">
+    <div class="form-horizontal">
+        @Html.AntiForgeryToken()
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div class="form-group">
+            <label asp-for="Nome" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                <div class="input-group m-b">
+                    <span class="input-group-addon"><i class="fa fa-edit"></i></span>
+                    <input asp-for="Nome" class="form-control" placeholder="Nome" />
+                </div>
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="hr-line-dashed"></div>
+        <div class="form-group">
+            <label asp-for="Descricao" class="control-label col-md-2"></label>
+            <div class="col-md-10">
+                <div class="input-group m-b">
+                    <span class="input-group-addon"><i class="fa fa-keyboard-o"></i></span>
+                    @Html.TextAreaFor(t => t.Descricao, new { @class = "form-control", placeholder = "Descrição" })
+                </div>
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+        </div>
+    </div>
+</div>

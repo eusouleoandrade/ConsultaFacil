@@ -19,9 +19,6 @@
             <li class="@Html.IsSelected(controller: "Home")">
                 <a href="@Url.Action("Index", "Home",  new { area = "" })"><i class="fa fa-home"></i> <span class="nav-label">Home</span> </a>
             </li>
-            <li class="@Html.IsSelected(controller: "Dashboard")">
-                <a href="@Url.Action("Dashboard", "Home",  new { area = "" })"><i class="fa fa-dashboard"></i> <span class="nav-label">Dashboard</span> </a>
-            </li>
             <li class="@Html.IsSelected(controller: "Paciente")">
                 <a href="@Url.Action("Index", "Paciente",  new { area = "" })"><i class="fa fa-user-md"></i> <span class="nav-label">Paciente</span> </a>
             </li>

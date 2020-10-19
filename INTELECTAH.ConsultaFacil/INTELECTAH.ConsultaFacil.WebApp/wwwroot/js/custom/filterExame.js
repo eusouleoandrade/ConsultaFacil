@@ -1,5 +1,6 @@
 ﻿document.querySelector('#TipoExameId').addEventListener("change", function (event) {
 
+
     if (event.target.value != '') {
         FilterExame(event.target.value);
     } else {
@@ -12,6 +13,7 @@
 
 function FilterExame(idTipoExame) {
 
+    SetLoad();
     var form = $('#__AjaxAntiForgeryFormConsulta');
     var token = $('input[name="__RequestVerificationToken"]', form).val();
 
@@ -35,8 +37,15 @@ function FilterExame(idTipoExame) {
                     var div_data = "<option value=" + obj.value + ">" + obj.text + "</option>";
                     $(div_data).appendTo(selectList);
                 });
+                SetLoad();
             },
-            error: function () { }
+            error: function () {
+                SetLoad();
+            }
         });
     return false;
+};
+
+function SetLoad() {
+    $('#ibox1').children('.ibox-content').toggleClass('sk-loading');
 };

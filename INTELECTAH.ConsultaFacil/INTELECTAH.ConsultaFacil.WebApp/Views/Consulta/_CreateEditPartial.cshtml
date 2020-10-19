@@ -1,50 +1,60 @@
 ﻿@model INTELECTAH.ConsultaFacil.ViewModel.Implementations.ConsultaViewModel
 
-<div class="panel-body" id="ibox1">
-    <div class="form-horizontal">
-        @Html.AntiForgeryToken()
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-            <label asp-for="Paciente" class="control-label col-md-2"></label>
-            <div class="col-md-10">
-                <div class="input-group m-b">
-                    <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
-                    @Html.DropDownList("PacienteId", null, "Selecione o paciente", new { @class = "form-control" })
-                </div>
-                <span asp-validation-for="PacienteId" class="text-danger"></span>
+
+<div class="form-horizontal">
+    <div id="ibox1">
+        <div class="ibox-content">
+            <div class="sk-spinner sk-spinner-wave">
+                <div class="sk-rect1"></div>
+                <div class="sk-rect2"></div>
+                <div class="sk-rect3"></div>
+                <div class="sk-rect4"></div>
+                <div class="sk-rect5"></div>
             </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-        <div class="form-group">
-            <label class="control-label col-md-2">Tipo Exame</label>
-            <div class="col-md-10">
-                <div class="input-group m-b">
-                    <span class="input-group-addon"><i class="fa fa-plus-square"></i></span>
-                    @Html.DropDownList("TipoExameId", null, "Selecione o tipo exame", new { @class = "form-control" })
+            @Html.AntiForgeryToken()
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Paciente" class="control-label col-md-2"></label>
+                <div class="col-md-10">
+                    <div class="input-group m-b">
+                        <span class="input-group-addon"><i class="fa fa-user-md"></i></span>
+                        @Html.DropDownList("PacienteId", null, "Selecione o paciente", new { @class = "form-control" })
+                    </div>
+                    <span asp-validation-for="PacienteId" class="text-danger"></span>
                 </div>
-                <span asp-validation-for="ExameId" class="text-danger"></span>
             </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-        <div class="form-group">
-            <label asp-for="Exame" class="control-label col-md-2"></label>
-            <div class="col-md-10">
-                <div class="input-group m-b">
-                    <span class="input-group-addon"><i class="fa fa-medkit"></i></span>
-                    @Html.DropDownList("ExameId", null, "Selecione o exame", new { @class = "form-control" })
+            <div class="hr-line-dashed"></div>
+            <div class="form-group">
+                <label class="control-label col-md-2">Tipo Exame</label>
+                <div class="col-md-10">
+                    <div class="input-group m-b">
+                        <span class="input-group-addon"><i class="fa fa-plus-square"></i></span>
+                        @Html.DropDownList("TipoExameId", null, "Selecione o tipo exame", new { @class = "form-control" })
+                    </div>
+                    <span asp-validation-for="ExameId" class="text-danger"></span>
                 </div>
-                <span asp-validation-for="ExameId" class="text-danger"></span>
             </div>
-        </div>
-        <div class="hr-line-dashed"></div>
-        <div class="form-group">
-            <label asp-for="DataHora" class="control-label col-md-2"></label>
-            <div class="col-md-10">
-                <div class="input-group m-b">
-                    <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
-                    <input asp-for="DataHora" class="form-control" />
+            <div class="hr-line-dashed"></div>
+            <div class="form-group">
+                <label asp-for="Exame" class="control-label col-md-2"></label>
+                <div class="col-md-10">
+                    <div class="input-group m-b">
+                        <span class="input-group-addon"><i class="fa fa-medkit"></i></span>
+                        @Html.DropDownList("ExameId", null, "Selecione o exame", new { @class = "form-control" })
+                    </div>
+                    <span asp-validation-for="ExameId" class="text-danger"></span>
                 </div>
-                <span asp-validation-for="DataHora" class="text-danger"></span>
+            </div>
+            <div class="hr-line-dashed"></div>
+            <div class="form-group">
+                <label asp-for="DataHora" class="control-label col-md-2"></label>
+                <div class="col-md-10">
+                    <div class="input-group m-b">
+                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                        <input asp-for="DataHora" class="form-control" />
+                    </div>
+                    <span asp-validation-for="DataHora" class="text-danger"></span>
+                </div>
             </div>
         </div>
     </div>

@@ -1,6 +1,5 @@
 ﻿document.querySelector('#TipoExameId').addEventListener("change", function (event) {
 
-
     if (event.target.value != '') {
         FilterExame(event.target.value);
     } else {
@@ -47,5 +46,6 @@ function FilterExame(idTipoExame) {
 };
 
 function SetLoad() {
+
     $('#ibox1').children('.ibox-content').toggleClass('sk-loading');
 };

@@ -1,3 +1,1 @@
-﻿function setLadda() {
-    Ladda.bind('.ladda-button', { timeout: 2000 });
-}
+﻿Ladda.bind('.ladda-button', { timeout: 2000 });

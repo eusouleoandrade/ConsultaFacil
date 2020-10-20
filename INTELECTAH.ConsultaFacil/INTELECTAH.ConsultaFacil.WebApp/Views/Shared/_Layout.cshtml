@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="~/css/animate.css" />
     <link rel="stylesheet" href="~/css/style.css" />
     <link rel="stylesheet" href="~/css/fonts/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/css/plugins/ladda/ladda-themeless.min.css" />
     @RenderSection("Styles", false)
 </head>
 <body>
@@ -46,6 +47,10 @@
     <script src="~/js/plugins/toastr/toastr.min.js"></script>
     <script src="~/js/custom/setToastr.js"></script>
     <script src="~/js/custom/setTempDataMessage.js"></script>
+    <script src="~/js/plugins/ladda/spin.min.js"></script>
+    <script src="~/js/plugins/ladda/ladda.min.js"></script>
+    <script src="~/js/plugins/ladda/ladda.jquery.min.js"></script>
+    <script type="text/javascript" src="~/js/custom/setLadda.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             setTempDataMessage('@TempData["Message"]');

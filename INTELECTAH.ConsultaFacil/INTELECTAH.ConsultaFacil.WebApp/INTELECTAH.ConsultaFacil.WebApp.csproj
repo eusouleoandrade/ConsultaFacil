@@ -89,7 +89,6 @@
     <None Include="wwwroot\js\custom\setDataTables.js" />
     <None Include="wwwroot\js\custom\setDatePicker.js" />
     <None Include="wwwroot\js\custom\setLadda.js" />
-    <None Include="wwwroot\js\custom\setLoadBox.js" />
     <None Include="wwwroot\js\custom\setTempDataMessage.js" />
     <None Include="wwwroot\js\custom\setToastr.js" />
     <None Include="wwwroot\js\esm\popper-utils.js" />

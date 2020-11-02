@@ -5,7 +5,6 @@ using INTELECTAH.ConsultaFacil.Service.Implementations;
 using INTELECTAH.ConsultaFacil.Service.Interfaces;
 using INTELECTAH.ConsultaFacil.SQLServerRepository;
 using INTELECTAH.ConsultaFacil.WebApi.Configurations;
-using INTELECTAH.ConsultaFacil.WebApi.Controllers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
